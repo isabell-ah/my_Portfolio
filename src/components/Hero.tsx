@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg">
-              I build scalable and efficient server-side applications with expertise in AWS Cloud, Real-Time Data & Analytics, and emerging Bitcoin development.
+              I build scalable and efficient server-side applications with expertise in AWS Cloud, API Development, and Real-Time Data & Analytics, complemented by frontend skills in React.js and Bootstrap.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -82,8 +82,8 @@ const Hero = () => {
               />
             </div>
             <div className="absolute -bottom-4 -left-4 p-4 bg-card shadow-lg rounded-lg border border-border hidden md:block">
-              <p className="font-medium">Backend Engineer</p>
-              <p className="text-muted-foreground text-sm">AWS Cloud | Bitcoin Development</p>
+              <p className="font-medium">Full-Stack Developer</p>
+              <p className="text-muted-foreground text-sm">Backend Specialist | AWS Cloud</p>
             </div>
           </div>
         </div>

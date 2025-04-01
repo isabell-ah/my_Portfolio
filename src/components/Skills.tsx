@@ -10,7 +10,7 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     title: "Languages & Frameworks",
-    skills: ["JavaScript", "Python", "Node.js", "Express.js", "Django", "React.js", "EJS"]
+    skills: ["JavaScript", "Python", "Node.js", "Express.js", "Django", "React.js", "EJS", "Bootstrap"]
   },
   {
     title: "Backend & API Development",
@@ -21,8 +21,8 @@ const skillCategories: SkillCategory[] = [
     skills: ["MongoDB", "MySQL", "PostgreSQL", "SQLite", "AWS Services", "Database Design", "Data Modeling"]
   },
   {
-    title: "Tools & Others",
-    skills: ["Git", "GitHub", "Linux", "CI/CD", "Docker", "Bitcoin Development", "Lightning Network"]
+    title: "Frontend & Others",
+    skills: ["React.js", "Bootstrap", "CSS", "Git", "GitHub", "Linux", "CI/CD", "Docker", "Bitcoin Development"]
   }
 ];
 

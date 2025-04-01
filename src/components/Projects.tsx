@@ -17,25 +17,25 @@ interface Project {
 const projects: Project[] = [
   {
     title: "RESTful API Platform",
-    description: "A robust API platform built with Node.js, Express, and MongoDB. Features authentication, rate limiting, comprehensive documentation, and analytics dashboard.",
+    description: "A robust API platform built with Node.js, Express, and MongoDB with a React.js admin dashboard. Features authentication, rate limiting, comprehensive documentation, and analytics dashboard.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    tags: ["Node.js", "Express.js", "MongoDB", "JWT Auth"],
+    tags: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "React.js"],
     demoUrl: "#",
     githubUrl: "#"
   },
   {
     title: "Microservices Architecture",
-    description: "A system of interconnected microservices built using Node.js and Python, with message queues for communication and containerized with Docker.",
+    description: "A system of interconnected microservices built using Node.js and Python, with message queues for communication and containerized with Docker. Includes a Bootstrap-based frontend for monitoring.",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
-    tags: ["Microservices", "Docker", "RabbitMQ", "Node.js"],
+    tags: ["Microservices", "Docker", "RabbitMQ", "Node.js", "Bootstrap"],
     demoUrl: "#",
     githubUrl: "#"
   },
   {
     title: "Real-Time Analytics Dashboard",
-    description: "A dashboard for visualizing real-time data streams using WebSockets, React, and Node.js with time-series database integration.",
+    description: "A dashboard for visualizing real-time data streams using WebSockets, React, and Node.js with time-series database integration and responsive design using CSS grid and flexbox.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    tags: ["WebSockets", "Node.js", "React", "Time-Series DB"],
+    tags: ["WebSockets", "Node.js", "React", "CSS Grid", "Time-Series DB"],
     demoUrl: "#",
     githubUrl: "#"
   }
