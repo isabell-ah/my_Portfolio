@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,19 +9,19 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Redux", "Framer Motion"]
+    skills: ["JavaScript", "TypeScript", "React", "Redux", "HTML", "CSS", "Tailwind CSS", "Material UI", "Bootstrap"]
   },
   {
-    title: "Backend",
+    title: "Mobile",
+    skills: ["React Native", "Expo", "Android", "iOS", "Mobile UI/UX", "App Store Deployment"]
+  },
+  {
+    title: "Backend & Tools",
     skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "RESTful APIs", "GraphQL"]
   },
   {
-    title: "Tools",
-    skills: ["Git", "GitHub", "VS Code", "Figma", "Webpack", "Docker", "Vercel"]
-  },
-  {
-    title: "Other",
-    skills: ["Responsive Design", "Testing", "SEO", "Performance Optimization", "Accessibility", "UX/UI Design"]
+    title: "Others",
+    skills: ["Git", "GitHub", "CI/CD", "Jest", "Testing", "Agile/Scrum", "Technical Writing", "UI/UX Design"]
   }
 ];
 
@@ -61,10 +60,10 @@ const Skills = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Research", description: "Understand project requirements and research best solutions." },
-              { step: "02", title: "Design", description: "Create wireframes and design the user interface." },
-              { step: "03", title: "Develop", description: "Write clean, efficient, and maintainable code." },
-              { step: "04", title: "Launch", description: "Test thoroughly and deploy to production." }
+              { step: "01", title: "Design", description: "Understand requirements and design user-centered solutions." },
+              { step: "02", title: "Develop", description: "Write clean, maintainable, and efficient code." },
+              { step: "03", title: "Test", description: "Thoroughly test for functionality and user experience." },
+              { step: "04", title: "Deploy", description: "Ship with confidence and iterate based on feedback." }
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 text-xl font-bold">

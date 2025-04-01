@@ -67,10 +67,10 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Email</p>
                   <a 
-                    href="mailto:your-email@example.com" 
+                    href="mailto:sharon.isabellah@gmail.com" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    your-email@example.com
+                    sharon.isabellah@gmail.com
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a 
-                    href="tel:+12345678901" 
+                    href="tel:+1234567890" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +1 (234) 567-8901
@@ -97,7 +97,7 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Location</p>
                   <p className="text-muted-foreground">
-                    San Francisco, CA, USA
+                    Nairobi, Kenya
                   </p>
                 </div>
               </div>
@@ -106,18 +106,33 @@ const Contact = () => {
             <div className="pt-6">
               <h4 className="text-lg font-medium mb-4">Let's connect</h4>
               <div className="flex space-x-4">
-                {["github", "linkedin", "twitter", "instagram"].map((platform) => (
-                  <a 
-                    key={platform}
-                    href={`https://${platform}.com`} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <span className="sr-only">{platform}</span>
-                    <i className={`icon-${platform}`}></i>
-                  </a>
-                ))}
+                <a 
+                  href="https://github.com/isabell-ah" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                >
+                  <span className="sr-only">GitHub</span>
+                  <i className="icon-github"></i>
+                </a>
+                <a 
+                  href="https://linkedin.com/in/sharon-isabellah" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                >
+                  <span className="sr-only">LinkedIn</span>
+                  <i className="icon-linkedin"></i>
+                </a>
+                <a 
+                  href="https://twitter.com/sharonisabellah" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                >
+                  <span className="sr-only">Twitter</span>
+                  <i className="icon-twitter"></i>
+                </a>
               </div>
             </div>
           </div>

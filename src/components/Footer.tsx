@@ -9,20 +9,20 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-2xl font-bold">
-              Portfolio<span className="text-portfolio-primary">.</span>
+              Sharon<span className="text-portfolio-primary">.</span>dev
             </div>
             <p className="text-muted-foreground mt-2">
-              Crafting digital experiences with passion
+              Building impactful digital experiences
             </p>
           </div>
           
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <div className="text-center md:text-right">
               <p className="text-muted-foreground">
-                &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+                &copy; {new Date().getFullYear()} Sharon Isabellah. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">
-                Designed and built with 💙
+                Designed and built with passion
               </p>
             </div>
             

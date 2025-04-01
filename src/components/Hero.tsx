@@ -1,24 +1,28 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Moon, Sun } from "lucide-react";
+import { Toggle } from "@/components/ui/toggle";
+import { useTheme } from "@/hooks/use-theme";
 
 const Hero = () => {
+  const { theme, toggleTheme } = useTheme();
+  
   return (
     <section id="home" className="min-h-screen flex items-center pt-16">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm">
-              Hello, I'm Your Name
+              Hello, I'm Sharon Isabellah
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              I build <span className="text-primary">digital experiences</span> that drive impact
+              I build <span className="text-primary">innovative solutions</span> that make an impact
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg">
-              I'm a passionate web developer specializing in creating beautiful, functional websites and applications that help businesses grow.
+              I'm a passionate Software Engineer specializing in creating beautiful, functional web and mobile applications that solve real-world problems.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -35,7 +39,7 @@ const Hero = () => {
             
             <div className="flex space-x-4 pt-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/isabell-ah" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -43,7 +47,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/sharon-isabellah" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -51,7 +55,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:your-email@example.com" 
+                href="mailto:sharon.isabellah@gmail.com" 
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail size={24} />
@@ -60,16 +64,26 @@ const Hero = () => {
           </div>
           
           <div className="relative">
+            <div className="absolute top-4 right-4 z-10">
+              <Toggle 
+                pressed={theme === 'dark'} 
+                onPressedChange={toggleTheme}
+                aria-label="Toggle theme"
+                className="bg-background/80 backdrop-blur-sm border border-border"
+              >
+                {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </Toggle>
+            </div>
             <div className="aspect-square rounded-2xl bg-muted overflow-hidden shadow-xl lg:-rotate-2 transform transition-transform hover:rotate-0 duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
                 alt="Developer working" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 p-4 bg-card shadow-lg rounded-lg border border-border hidden md:block">
-              <p className="font-medium">5+ years of experience</p>
-              <p className="text-muted-foreground text-sm">Building web experiences</p>
+              <p className="font-medium">Software Engineer</p>
+              <p className="text-muted-foreground text-sm">Frontend & Mobile Development</p>
             </div>
           </div>
         </div>
