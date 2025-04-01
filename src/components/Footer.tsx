@@ -1,6 +1,6 @@
 
 import React from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Mountain } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,9 +21,10 @@ const Footer = () => {
               <p className="text-muted-foreground">
                 &copy; {new Date().getFullYear()} Sharon Isabellah. All rights reserved.
               </p>
-              <p className="text-sm text-muted-foreground">
-                Backend Engineer | AWS Cloud | Full-Stack Developer
-              </p>
+              <div className="text-sm text-muted-foreground flex items-center justify-center md:justify-end gap-1 mt-1">
+                <span>Backend Engineer | AWS Cloud | Full-Stack Developer</span>
+                <Mountain size={14} className="text-primary" />
+              </div>
             </div>
             
             <a 

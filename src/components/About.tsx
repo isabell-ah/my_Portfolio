@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Mountain } from "lucide-react";
 
 const About = () => {
   return (
@@ -43,6 +43,13 @@ const About = () => {
               <p>
                 Though I specialize in backend technologies, I'm also proficient with frontend tools like React.js, Bootstrap, and CSS, allowing me to understand UI/UX requirements and communicate effectively with frontend teams. This balanced skillset helps me build solutions that consider both server-side efficiency and client-side experience.
               </p>
+
+              <div className="flex items-center gap-2 pt-2">
+                <Mountain className="h-5 w-5 text-primary" />
+                <p className="font-medium">
+                  Outside the digital world, I'm an avid hiker who loves exploring nature trails and mountains. Hiking helps me clear my mind and find creative solutions to complex technical problems.
+                </p>
+              </div>
             </div>
             
             <div className="pt-4">
