@@ -12,7 +12,7 @@ const Footer = () => {
               Sharon<span className="text-portfolio-primary">.</span>dev
             </div>
             <p className="text-muted-foreground mt-2">
-              Building impactful digital experiences
+              Building robust backend systems and cloud solutions
             </p>
           </div>
           
@@ -22,7 +22,7 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} Sharon Isabellah. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">
-                Designed and built with passion
+                Backend Engineer | AWS Cloud | Bitcoin Development
               </p>
             </div>
             

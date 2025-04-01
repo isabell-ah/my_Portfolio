@@ -18,11 +18,11 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              I build <span className="text-primary">innovative solutions</span> that make an impact
+              Backend Engineer & <span className="text-primary">Cloud Expert</span>
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-lg">
-              I'm a passionate Software Engineer specializing in creating beautiful, functional web and mobile applications that solve real-world problems.
+              I build scalable and efficient server-side applications with expertise in AWS Cloud, Real-Time Data & Analytics, and emerging Bitcoin development.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -76,14 +76,14 @@ const Hero = () => {
             </div>
             <div className="aspect-square rounded-2xl bg-muted overflow-hidden shadow-xl lg:-rotate-2 transform transition-transform hover:rotate-0 duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                alt="Developer working" 
+                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3"
+                alt="Backend Development" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 p-4 bg-card shadow-lg rounded-lg border border-border hidden md:block">
-              <p className="font-medium">Software Engineer</p>
-              <p className="text-muted-foreground text-sm">Frontend & Mobile Development</p>
+              <p className="font-medium">Backend Engineer</p>
+              <p className="text-muted-foreground text-sm">AWS Cloud | Bitcoin Development</p>
             </div>
           </div>
         </div>

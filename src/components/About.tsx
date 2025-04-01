@@ -9,15 +9,15 @@ const About = () => {
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
         <p className="section-subtitle">
-          Learn more about my journey, experience, and what drives me as a software engineer.
+          Learn more about my journey, experience, and what drives me as a backend engineer.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-muted overflow-hidden shadow-xl lg:rotate-2 transform transition-transform hover:rotate-0 duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
-                alt="Profile" 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" 
+                alt="Backend Development" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -33,15 +33,15 @@ const About = () => {
             
             <div className="space-y-4">
               <p>
-                I'm a dedicated Software Engineer with over 4 years of experience developing web and mobile applications. My journey in tech began with a passion for creating solutions that solve real-world problems, and I've been constantly learning and growing since then.
+                I'm a passionate Backend Engineer with expertise in building scalable and efficient server-side applications. My journey in tech began with a deep interest in creating robust backend systems that power modern web applications.
               </p>
               
               <p>
-                I specialize in frontend development, with expertise in React, React Native, and modern JavaScript frameworks. I'm passionate about creating intuitive user interfaces and seamless user experiences that make applications both functional and enjoyable to use.
+                Currently enhancing my skills in AWS Cloud, Python, and Bitcoin Development, while also exploring advanced API Development techniques and Microservices Architecture. I'm particularly interested in Real-Time Data & Analytics solutions.
               </p>
               
               <p>
-                When I'm not coding, you might find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through mentorship. I believe in continuous learning and staying current with the latest industry trends and best practices.
+                When I'm not coding, I'm either studying for my AWS Cloud Practitioner certification, contributing to open-source projects, or exploring the fascinating world of Bitcoin and Lightning Network development.
               </p>
             </div>
             

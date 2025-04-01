@@ -16,26 +16,26 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-commerce Platform",
-    description: "A fully responsive e-commerce platform built with React, Node.js, and MongoDB. Features include product filtering, cart functionality, user authentication, and payment integration.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "RESTful API Platform",
+    description: "A robust API platform built with Node.js, Express, and MongoDB. Features authentication, rate limiting, comprehensive documentation, and analytics dashboard.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    tags: ["Node.js", "Express.js", "MongoDB", "JWT Auth"],
     demoUrl: "#",
     githubUrl: "#"
   },
   {
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with React and Tailwind CSS. Features include smooth scrolling, responsive design, and contact form functionality.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    tags: ["React", "Tailwind CSS", "Vite"],
+    title: "Microservices Architecture",
+    description: "A system of interconnected microservices built using Node.js and Python, with message queues for communication and containerized with Docker.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    tags: ["Microservices", "Docker", "RabbitMQ", "Node.js"],
     demoUrl: "#",
     githubUrl: "#"
   },
   {
-    title: "Task Management App",
-    description: "A drag-and-drop task management application built with React and TypeScript. Features include task creation, drag-and-drop functionality, and user authentication.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    tags: ["React", "TypeScript", "Firebase"],
+    title: "Real-Time Analytics Dashboard",
+    description: "A dashboard for visualizing real-time data streams using WebSockets, React, and Node.js with time-series database integration.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    tags: ["WebSockets", "Node.js", "React", "Time-Series DB"],
     demoUrl: "#",
     githubUrl: "#"
   }
@@ -90,7 +90,7 @@ const Projects = () => {
       <div className="section-container">
         <h2 className="section-title">My Projects</h2>
         <p className="section-subtitle">
-          Here are some of my recent projects. Each project is unique and showcases different skills and technologies.
+          Here are some of my backend and cloud-focused projects that demonstrate my technical expertise.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -101,7 +101,7 @@ const Projects = () => {
         
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/isabell-ah" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               See More on GitHub
             </a>
