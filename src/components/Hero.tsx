@@ -5,6 +5,7 @@ import { ArrowRight, Github, Linkedin, Mail, Moon, Sun, Code, Server, Cloud, Dat
 import { Toggle } from "@/components/ui/toggle";
 import { useTheme } from "@/hooks/use-theme";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   const { theme, toggleTheme } = useTheme();
@@ -97,11 +98,15 @@ const Hero = () => {
               </Toggle>
             </div>
             <div className="aspect-square rounded-2xl bg-muted overflow-hidden shadow-xl lg:-rotate-2 transform transition-transform hover:rotate-0 duration-300 border border-border relative">
-              <img 
-                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3"
-                alt="Backend Development" 
-                className="w-full h-full object-cover brightness-[0.85]"
-              />
+              {/* Replace with your profile image */}
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage 
+                  src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" 
+                  alt="Sharon Isabellah"
+                  className="w-full h-full object-cover brightness-[0.85]" 
+                />
+                <AvatarFallback className="w-full h-full text-6xl font-bold">SI</AvatarFallback>
+              </Avatar>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-60"></div>
             </div>
             <div className="absolute -bottom-4 -left-4 p-4 bg-card shadow-lg rounded-lg border border-border hidden md:block backdrop-blur-sm bg-background/80">

@@ -1,32 +1,62 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Download, Mountain, Code, Database, Globe, Server } from "lucide-react";
+import { Download, Mountain, Code, Database, Globe, Server, Award, GraduationCap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   return (
     <section id="about" className="scroll-mt-16 bg-muted/10 py-16">
       <div className="section-container">
-        <h2 className="section-title">About Me</h2>
-        <p className="section-subtitle">
-          Learn more about my journey, experience, and what drives me as a developer specializing in backend technology.
-        </p>
+        <div className="flex flex-col items-center mb-12">
+          <Badge variant="outline" className="mb-4 bg-primary/10 border-primary/20">My Journey</Badge>
+          <h2 className="section-title">About Me</h2>
+          <p className="section-subtitle">
+            Learn more about my journey, experience, and what drives me as a developer specializing in backend technology.
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-muted overflow-hidden shadow-xl lg:rotate-2 transform transition-transform hover:rotate-0 duration-300 border border-border">
-              <img 
-                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" 
-                alt="Backend Development" 
-                className="w-full h-full object-cover"
-              />
+              {/* Professional portrait */}
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                  alt="Sharon Isabellah - Professional Portrait"
+                  className="w-full h-full object-cover" 
+                />
+                <AvatarFallback className="w-full h-full text-6xl font-bold">SI</AvatarFallback>
+              </Avatar>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/40"></div>
             </div>
             
             <div className="absolute -bottom-6 -right-6 p-6 bg-primary text-primary-foreground rounded-full shadow-lg hidden md:flex items-center justify-center">
               <span className="text-2xl font-bold">4+</span>
               <span className="text-sm ml-1">Years<br/>Experience</span>
+            </div>
+            
+            {/* Career highlights badge */}
+            <div className="absolute -top-4 -left-4 p-4 bg-card shadow-lg rounded-lg border border-border hidden md:block">
+              <div className="flex items-center gap-2">
+                <GraduationCap className="h-5 w-5 text-primary" />
+                <p className="font-medium">Career Highlights</p>
+              </div>
+              <div className="mt-2 space-y-1">
+                <div className="flex items-center gap-1.5 text-xs">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full"></span>
+                  <span>Lead Backend Engineer at TechCorp</span>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full"></span>
+                  <span>AWS Cloud Solutions Architect</span>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full"></span>
+                  <span>Full-Stack Developer</span>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -92,11 +122,18 @@ const About = () => {
               </div>
             </div>
             
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap gap-3">
               <Button asChild className="group">
                 <a href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4 group-hover:-translate-y-1 transition-transform" />
                   Download Resume
+                </a>
+              </Button>
+              
+              <Button variant="outline" asChild>
+                <a href="#certifications">
+                  <Award className="mr-2 h-4 w-4" />
+                  View Certifications
                 </a>
               </Button>
             </div>
