@@ -2,7 +2,7 @@
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Award, Certificate, CheckCircle2 } from "lucide-react";
+import { Award, CheckCircle2, Scroll } from "lucide-react";
 
 interface CertificationProps {
   title: string;
@@ -18,7 +18,7 @@ const CertificationCard = ({ title, issuer, date, credentialId, credentialUrl }:
       <CardHeader>
         <div className="flex items-start justify-between">
           <CardTitle className="text-xl font-bold">{title}</CardTitle>
-          <Certificate className="h-6 w-6 text-primary" />
+          <Scroll className="h-6 w-6 text-primary" />
         </div>
         <CardDescription className="flex items-center gap-1.5">
           <span>{issuer}</span>
@@ -110,3 +110,4 @@ const Certifications = () => {
 };
 
 export default Certifications;
+
