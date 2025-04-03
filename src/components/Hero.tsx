@@ -15,9 +15,19 @@ const Hero = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <Badge variant="outline" className="px-3 py-1 text-sm bg-primary/10 text-primary border-primary/20">
-              Hello, I'm Sharon Isabellah
-            </Badge>
+            <div className="flex items-center gap-3 mb-2">
+              <Avatar className="h-12 w-12 border-2 border-primary">
+                <AvatarImage 
+                  src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" 
+                  alt="Sharon Isabellah"
+                  className="object-cover" 
+                />
+                <AvatarFallback className="text-lg font-bold">SI</AvatarFallback>
+              </Avatar>
+              <Badge variant="outline" className="px-3 py-1 text-sm bg-primary/10 text-primary border-primary/20">
+                Hello, I'm Sharon Isabellah
+              </Badge>
+            </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Backend Engineer & <span className="text-primary">Cloud Expert</span>
