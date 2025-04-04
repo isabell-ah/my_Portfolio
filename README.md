@@ -1,5 +1,3 @@
-# Welcome to your Lovable project
-
 ## Project info
 
 ```sh
@@ -25,5 +23,3 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
