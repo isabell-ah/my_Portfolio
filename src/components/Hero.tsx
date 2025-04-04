@@ -43,6 +43,12 @@ const Hero = () => {
               >
                 Hello, I'm Sharon Isabela
               </Badge>
+              <div className='-mt-2 p-2 mb-4 bg-card shadow-lg rounded-lg border border-border hidden md:block backdrop-blur-sm bg-background/80'>
+                <p className='text-muted-foreground text-sm text-center'>
+                  🔹 The most valuable skill isn’t expertise— it’s the
+                  willingness to become a beginner again.😊
+                </p>
+              </div>
             </div>
 
             <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
@@ -51,9 +57,9 @@ const Hero = () => {
             </h1>
 
             <p className='text-lg text-muted-foreground max-w-lg'>
-              I build scalable and efficient server-side applications with
-              expertise in AWS Cloud, API Development, and Real-Time Data &
-              Analytics, complemented by frontend skills.
+              I am Learner! I build scalable and efficient server-side
+              applications with knowledge in AWS Cloud, API Development, and
+              Real-Time Data & Analytics, complemented by frontend skills.
             </p>
 
             <div className='flex flex-wrap gap-4 items-center'>

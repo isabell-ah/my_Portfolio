@@ -26,7 +26,7 @@ const projects: Project[] = [
   {
     title: 'RESTful API Platform',
     description:
-      'A robust API platform built with Node.js, Express, and MongoDB. Features authentication, rate limiting, comprehensive documentation, and analytics dashboard.',
+      'A robust API platform built with Node.js, Express, and MongoDB. Features authentication, rate limiting, comprehensive documentation.',
     image: rest,
     tags: ['Node.js', 'Express.js', 'MongoDB', 'JWT Auth'],
     demoUrl: '#',
